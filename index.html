@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./index.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="header-top">
+      <h1 class="logo">
+        <a href="#">
+          <img src="./assets/image/logo.png" alt="로고">
+        </a>
+      </h1>
+      <div class="option">
+        <div class="search">
+          <input type="text" placeholder="채널명을 검색해주세요.">
+          <div class="icon">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="text1">
+            <a href="#">Youtube분석</a>
+          </div>
+          <div class="text2">
+            <a href="#">게시판</a>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <a href="#">설정</a>
+        <span class="dot"></span>
+        <a href="#">로그인</a>
+      </div>
+    </div>
+    <nav class="header-bottom">
+      <ul>
+        <li class="action">
+          <a href="#">카테고리 분석</a>
+        </li>
+        <li>
+          <a href="#">채널 분석</a>
+        </li>
+        <li>
+          <a href="#">영상분석</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="component -compare">
+      <div class="wrap">
+        <div class="main-target">
+          <div class="component -hexagon -change">
+            <div class="outside">
+              <div class="inside">
+                <div class="img-set">
+                  <img src="./assets/image/streamer/1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <div class="change">
+                <div>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+              </div>
+              <div class="bookmark">
+                <div class="icon">
+                  <div class="inside"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="strname">얌무</div>
+          <div class="hide-box">
+            <div class="wrap">
+              <div class="item">
+                <div class="component -hexagon -check">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/6.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">엔조이커플</div>
+              </div>
+              <div class="item">
+                <div class="component -hexagon">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/3.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">초승달</div>
+              </div>
+              <div class="item">
+                <div class="component -hexagon">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/4.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">풍월량</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vs">
+          vs
+        </div>
+
+        <div class="comparison-target">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-o">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/2.png" alt="">
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">장삐쭈</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-o">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/3.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">초승달</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-x">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/4.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">풍월량</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-x">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/5.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">선바</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-x">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/6.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">엔조이커플</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-x">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/7.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">도티</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-x">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/8.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">엔조이커플</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-x">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/9.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">떵개떵</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-x">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/10.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">입짧은 햇님</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-x">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/11.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">쯔양</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="component -hexagon -bookmark-x">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/12.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <div class="change">
+                      <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="bookmark">
+                      <div class="icon">
+                        <div class="inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">밴쯔</div>
+              </div>
+            </div>
+          </div>
+          <div class="hexagon-plus">
+            <div class="component -hexagon -bookmark-x">
+              <div class="step1">
+                <div class="step2">
+                  <div class="horizontal"></div>
+                  <div class="vertical"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+
+      <!-- <div class="hide-box">
+        <div class="wrap">
+          <div class="item">
+            <div class="component -hexagon -check">
+              <div class="outside">
+                <div class="inside">
+                  <div class="img-set">
+                    <img src="./assets/image/streamer/6.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="option">
+                <div class="change">
+                  <div>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <div class="icon">
+                    <div class="inside"></div>
+                  </div>
+                </div>
+                <div class="check">
+                  <div class="icon">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="strname">엔조이커플</div>
+          </div>
+          <div class="item">
+            <div class="component -hexagon">
+              <div class="outside">
+                <div class="inside">
+                  <div class="img-set">
+                    <img src="./assets/image/streamer/3.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="option">
+                <div class="change">
+                  <div>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <div class="icon">
+                    <div class="inside"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="strname">초승달</div>
+          </div>
+          <div class="item">
+            <div class="component -hexagon">
+              <div class="outside">
+                <div class="inside">
+                  <div class="img-set">
+                    <img src="./assets/image/streamer/4.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="option">
+                <div class="change">
+                  <div>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <div class="icon">
+                    <div class="inside"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="strname">풍월량</div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap1">
+      <div class="component -bar">
+        <div class="component -hexagon">
+          <div class="outside">
+            <div class="inside">
+              <div class="img-set">
+                <img src="./assets/image/streamer/1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="txt">
+          <span>얌무</span>님은 <span>'먹방'</span> 에서 상위 <span class="percent">12%</span>에요!
+        </div>
+      </div>
+      
+      <div class="component component1">
+        <h2 class="title">동일 카테고리의 경쟁률이 높은 채널을 비교해보세요!</h2>
+        <div class="wrap">
+          <div class="tabs">
+            <div class="tab active">구독자수 성장률</div>
+            <div class="tab">조회수 성장률</div>
+            <div class="tab">업로드영상 증가율</div>
+          </div>
+  
+          <div class="content">
+            <div class="content1">
+              <div class="item">
+                <div class="component -hexagon">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/10.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">입짧은 햇님</div>
+                <div class="subscriber">구독자 238만명</div>
+                <div class="bluec">50<br>%</div>
+              </div>
+              <div class="item">
+                <div class="component -hexagon">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/11.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">쯔양</div>
+                <div class="subscriber">구독자 238만명</div>
+                <div class="bluec">50<br>%</div>
+              </div>
+              <div class="item">
+                <div class="component -hexagon">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/12.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">밴쯔</div>
+                <div class="subscriber">구독자 238만명</div>
+                <div class="bluec">50<br>%</div>
+              </div>
+              <div class="item">
+                <div class="component -hexagon">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/13.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">공대생 변승주</div>
+                <div class="subscriber">구독자 238만명</div>
+                <div class="bluec">50<br>%</div>
+              </div>
+              <div class="item">
+                <div class="component -hexagon">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/14.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">햄찌</div>
+                <div class="subscriber">구독자 238만명</div>
+                <div class="bluec">50<br>%</div>
+              </div>
+              <div class="item">
+                <div class="component -hexagon">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/13.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">밴쯔</div>
+                <div class="subscriber">구독자 238만명</div>
+                <div class="bluec">50<br>%</div>
+              </div>
+              <div class="item">
+                <div class="component -hexagon">
+                  <div class="outside">
+                    <div class="inside">
+                      <div class="img-set">
+                        <img src="./assets/image/streamer/10.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="strname">입짧은 햇님</div>
+                <div class="subscriber">구독자 238만명</div>
+                <div class="bluec">50<br>%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+      </div>
+
+      <div class="component component2">
+        <h2 class="title">모니터링 채널과 비교한 항목지표 한눈에 보기</h2>
+        <div class="wrap">
+
+          <div class="chart chart1 curve score2">
+            <div class="subtitle">나의 평균 참여도는?</div>
+            
+            <div class="chart-wrap">
+              <svg class="half-circle" viewBox="0 0 292 92">
+                <path d="M 5 87 q 146 -152, 282 0" />
+              </svg>
+              <svg class="half-circle2" viewBox="0 0 292 92">
+                <path d="M 5 87 q 146 -152, 282 0" />
+              </svg>
+
+              <div class="result">
+                <i class="fa-solid fa-down-long"></i>낮음
+              </div>
+
+              <div class="score">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart chart2 line">
+            <div class="subtitle">효과가 높은 영상 길이</div>
+            
+            <div class="chart-wrap">
+              <svg viewBox="0 0 300 100">
+                <defs>
+                  <linearGradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(51,215,160,0.24)" />
+                    <stop offset="100%" stop-color="#fff" />
+                  </linearGradient>
+                </defs>
+                <!--y 0이 위 100이 아래  -->
+                <path 
+                fill="url(#grad1)"
+                  stroke="green"
+                  d="M 00, 100 
+                    C60,10 90,75 180,45
+                    C240,66 270,130 300,50
+                    L300,66
+                    
+                  "
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="chart chart3 bar-chart">
+            <div class="subtitle">가장 반응 좋은 시간대</div>
+            
+            <div class="chart-wrap">
+              <ul class="chart-set">
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                  </div>
+                  <div class="txt">1</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                  </div>
+                  <div class="txt">2</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                  </div>
+                  <div class="txt">3</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                    <div class="active-cover"></div>
+                  </div>
+                  <div class="txt">4</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                    <div class="active-cover"></div>
+                  </div>
+                  <div class="txt">5</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                    <div class="active-cover"></div>
+                  </div>
+                  <div class="txt">6</div>
+                </li>
+                <li class="item active">
+                  <div class="cover">
+                    <span class="graph"></span>
+                    <div class="active-cover"></div>
+                  </div>
+                  <div class="txt">7</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                    <div class="active-cover"></div>
+                  </div>
+                  <div class="txt">8</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                    <div class="active-cover"></div>
+                  </div>
+                  <div class="txt">9</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                    <div class="active-cover"></div>
+                  </div>
+                  <div class="txt">10</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                    <div class="active-cover"></div>
+                  </div>
+                  <div class="txt">11</div>
+                </li>
+                <li class="item">
+                  <div class="cover">
+                    <span class="graph"></span>
+                    <div class="active-cover"></div>
+                  </div>
+                  <div class="txt">12</div>
+                </li>
+              </ul>
+              <div class="tooltip arrow-left">
+                <div class="dot"></div>
+                <div class="time">07:00pm</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="chart chart4 table-chart">
+            <div class="subtitle">광고 콘텐츠 평균 개수</div>
+            
+            <div class="chart-wrap">
+              <div class="table-set">
+                <table>
+                  <tr class="line1">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="line2">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="line3">
+                    <td></td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="line4">
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="line5">
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="wrap">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div class="tooltip">1.5<span>개</span></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="chart chart5 curve score4">
+            <div class="subtitle">평균 월 업로드 수</div>
+            
+            <div class="chart-wrap">
+              <svg class="half-circle" viewBox="0 0 292 92">
+                <path d="M 5 87 q 146 -152, 282 0" />
+              </svg>
+
+              <svg class="half-circle2" viewBox="0 0 292 92">
+                <path d="M 5 87 q 146 -152, 282 0" />
+              </svg>
+
+              <div class="result">
+                <i class="fa-solid fa-up-long"></i>높음
+              </div>
+
+              <div class="score">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="chart chart6 progress">
+            <div class="subtitle">많이 언급된 단어들</div>
+            
+            <div class="chart-wrap">
+              <div class="progress">
+                <div class="progress-bar"></div>
+                <div class="keyword">햄최몇</div>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar"></div>
+                <div class="keyword">배불리배불리</div>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar"></div>
+                <div class="keyword">스타또</div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap2">
+      <div class="component component1">
+        <h2 class="title">모니터링 채널 중 최고 인기영상 살펴보기</h2>
+        <div class="grid-set">
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/doti.png" alt="인기동영상 도티TV 만약에 무조건 계획대로만 인생을 산다면 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="#">도티 TV</a>
+              </div>
+              <div class="title">[만약에🤔] 무조건 계획대로만 인생을 산다면 ⏰🕹️</div>
+              <div class="desc">
+                <span class="hits">조회수 139만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/mintchoco.png" alt="인기동영상 침착맨 민트초코로 호들갑 떠는 게 싫다고 했던 사람 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="#">침착맨</a>
+              </div>
+              <div class="title">민트초코로 호들갑 떠는 게 싫다고 했던 사람</div>
+              <div class="desc">
+                <span class="hits">조회수 40만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/mma.png" alt="인기동영상 BANGTANTV BTS (방탄소년단) Intro: Persona + 상남자(Boy In Luv) 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="#">BANGTANTV</a>
+              </div>
+              <div class="title">BTS (방탄소년단) Intro: Persona + 상남자(Boy In Luv)</div>
+              <div class="desc">
+                <span class="hits">조회수 2540만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/per.png" alt="인기동영상 침착맨 세 명인데 피자 한 판만 시켜버림 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="#">침착맨</a>
+              </div>
+              <div class="title">세 명인데 피자 한 판만 시켜버림</div>
+              <div class="desc">
+                <span class="hits">조회수 40만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/catchmind.png" alt="인기동영상 침착맨 침펄풍, 웹툰작가 자존심이 걸린 그림 대결 - 쿵야 캐치마인드 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="#">침착맨</a>
+              </div>
+              <div class="title">침펄풍, 웹툰작가 자존심이 걸린 그림 대결 - 쿵야 캐치마인드</div>
+              <div class="desc">
+                <span class="hits">조회수 139만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/doti.png" alt="인기동영상 도티TV 만약에 무조건 계획대로만 인생을 산다면 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="">도티 TV</a>
+              </div>
+              <div class="title">[만약에🤔] 무조건 계획대로만 인생을 산다면 ⏰🕹️</div>
+              <div class="desc">
+                <span class="hits">조회수 139만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/mintchoco.png" alt="인기동영상 침착맨 민트초코로 호들갑 떠는 게 싫다고 했던 사람 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="#">침착맨</a>
+              </div>
+              <div class="title">민트초코로 호들갑 떠는 게 싫다고 했던 사람</div>
+              <div class="desc">
+                <span class="hits">조회수 40만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/mma.png" alt="인기동영상 BANGTANTV BTS (방탄소년단) Intro: Persona + 상남자(Boy In Luv) 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="#">BANGTANTV</a>
+              </div>
+              <div class="title">BTS (방탄소년단) Intro: Persona + 상남자(Boy In Luv)</div>
+              <div class="desc">
+                <span class="hits">조회수 2540만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/per.png" alt="인기동영상 침착맨 세 명인데 피자 한 판만 시켜버림 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="#">침착맨</a>
+              </div>
+              <div class="title">세 명인데 피자 한 판만 시켜버림</div>
+              <div class="desc">
+                <span class="hits">조회수 40만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-set">
+              <img src="./assets/image/bg/catchmind.png" alt="인기동영상 침착맨 침펄풍, 웹툰작가 자존심이 걸린 그림 대결 - 쿵야 캐치마인드 으로 이동">
+            </div>
+            <div class="txt-set">
+              <div class="name">
+                <a href="#">침착맨</a>
+              </div>
+              <div class="title">침펄풍, 웹툰작가 자존심이 걸린 그림 대결 - 쿵야 캐치마인드</div>
+              <div class="desc">
+                <span class="hits">조회수 139만회</span> 
+                <span class="upload">2021-08-09</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more">
+          <div class="btn-more">
+            <div>더보기</div>
+            <div class="hexagon">
+              <img src="./assets/image/svg/Hexagon.svg" alt="더보기 아이콘">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer id="footer">
+    <p>Copyright ⓒ 2024 Hubdnc. All Rights Reserved</p>
+  </footer>
+
+
+</body>
+</html>
