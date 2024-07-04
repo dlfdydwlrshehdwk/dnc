@@ -146,6 +146,7 @@ img {
     background-color: #0d2639;
     ul {
       max-width: 1080px;
+      // width: 1080px;
       margin: 0 auto;
       height: 100%;
       display: flex;
@@ -175,6 +176,7 @@ img {
 #main {
   .wrap1 {
     max-width: 1080px;
+    // width: 1080px;
     margin: 0 auto;
     .component {
       > .title {
@@ -187,6 +189,7 @@ img {
     }
     .component1 {
       margin-bottom: 100px;
+      // width: 1080px;
       .wrap {
         .tabs {
           display: flex;
@@ -291,6 +294,7 @@ img {
     }
     .component2 {
       margin-bottom: 100px;
+      // width: 1080px;
       > .wrap {
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -556,16 +560,84 @@ img {
           flex-direction: column;
           justify-content: space-between;
           .chart-wrap {
-            position: relative;
-            height: 100%;
-            svg {
-              // border: 1px solid #000;
-              // background-image: linear-gradient(180deg, rgba(51,215,160,0.24) 0%, rgba(117,238,210,0.039999999999999994) 100%);
-              // background-color: #fff;
-              // fill: none;
-              >path {
-                // fill: none;
+            position: relative; 
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            border-bottom: 2px solid #d2d7df;
+            .dots {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              .dot {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border: 2px solid #1ecf94;
+                background-color: #fff;
+                border-radius: 10px;
+                &:nth-child(1){
+                  left: 16px;
+                  top: 38px;
+                }
+                &:nth-child(2){
+                  left: 84px;
+                  top: 77px;
+                }
+                &:nth-child(3){
+                  left: 116px;
+                  top: 44px;
+                }
+                &:nth-child(4){
+                  left: 142px;
+                  top: 12px;
+              
+                }
+                &:nth-child(5){
+                  left: 208px;
+                  top: 63px;
+                }
+                &:nth-child(6){
+                  left: 275px;
+                  top: 63px;
+                }
+                &.active {
+                  background-color: #1ecf94;
+                  &::after {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 20px;
+                    background-color: #1ecf94;
+                    opacity: .3;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                  }
+                }
               }
+            }
+            .tooltip {
+              position: absolute;
+              top: -20px;
+              left: 170px;
+              font-size: 17px;
+              color: #ffffff;
+              font-weight: 800;
+              font-family: "Pretendard";
+              text-align: center;
+              width: 74px;
+              height: 34px;
+              filter: drop-shadow(0px 3px 3.5px rgba(74,127,175,0.2));
+              background-image: linear-gradient(270deg, #1ecf94 0%, #40da64 100%);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 8px 8px 8px 0;
             }
           }
         }
@@ -1089,11 +1161,12 @@ img {
         display: block;
       }
     }
-    .wrap {
+    > .wrap {
       display: flex;
       align-items: center;
       justify-content: center;
       max-width: 1080px;
+      // width: 1080px;
       margin: 0 auto;
       .main-target {
         position: relative;
@@ -1223,6 +1296,9 @@ img {
       .wrap {
         gap: 16px;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .item {
           .component.-hexagon {
             width: 58px;
@@ -1292,6 +1368,7 @@ img {
       bottom: 0;
       width: 28px;
       height: 28px;
+      cursor: pointer;
       .change {
         position: relative;
         border-radius: 999px;

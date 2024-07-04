@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Hubdnc</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="shortcut icon" href="./assets//image/favicons/favicon.ico" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="./style.css">
-  
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <link rel="stylesheet" href="./style.css">
   <script src="./index.js"></script>
 </head>
 <body>
@@ -768,18 +769,27 @@
                     <stop offset="100%" stop-color="#fff" />
                   </linearGradient>
                 </defs>
-                <!--y 0이 위 100이 아래  -->
                 <path 
                 fill="url(#grad1)"
-                  stroke="green"
-                  d="M 00, 100 
-                    C60,10 90,75 180,45
-                    C240,66 270,130 300,50
-                    L300,66
-                    
+                  stroke="#1ecf94"
+                  d="M 00, 50 
+                  C 50,20 60,100 100,80
+                  C 120,70 130,00 160,20
+                  C 160,20 190,50 200,60
+                  C 200,60 250,100 300,55  
+                  L 300,100 L 0,100 
                   "
                 />
               </svg>
+              <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="tooltip"><span>4</span>~<span>7</span>분</div>
             </div>
           </div>
 

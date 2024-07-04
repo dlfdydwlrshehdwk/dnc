@@ -505,7 +505,84 @@ img {
 }
 #main .wrap1 .component2 .chart.line .chart-wrap {
   position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: 2px solid #d2d7df;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots {
+  position: absolute;
+  width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #1ecf94;
+  background-color: #fff;
+  border-radius: 10px;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots .dot:nth-child(1) {
+  left: 16px;
+  top: 38px;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots .dot:nth-child(2) {
+  left: 84px;
+  top: 77px;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots .dot:nth-child(3) {
+  left: 116px;
+  top: 44px;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots .dot:nth-child(4) {
+  left: 142px;
+  top: 12px;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots .dot:nth-child(5) {
+  left: 208px;
+  top: 63px;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots .dot:nth-child(6) {
+  left: 275px;
+  top: 63px;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots .dot.active {
+  background-color: #1ecf94;
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .dots .dot.active::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #1ecf94;
+  opacity: 0.3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#main .wrap1 .component2 .chart.line .chart-wrap .tooltip {
+  position: absolute;
+  top: -20px;
+  left: 170px;
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: "Pretendard";
+  text-align: center;
+  width: 74px;
+  height: 34px;
+  filter: drop-shadow(0px 3px 3.5px rgba(74, 127, 175, 0.2));
+  background-image: linear-gradient(270deg, #1ecf94 0%, #40da64 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 8px 8px 0;
 }
 #main .wrap1 .component2 .chart.progress {
   display: flex;
@@ -920,14 +997,14 @@ img {
 .component.-compare.active .hide-box {
   display: block;
 }
-.component.-compare .wrap {
+.component.-compare > .wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 1080px;
   margin: 0 auto;
 }
-.component.-compare .wrap .main-target {
+.component.-compare > .wrap .main-target {
   position: relative;
   width: 120px;
   height: 140px;
@@ -936,10 +1013,10 @@ img {
   border: 1px solid #e1e5ec;
   flex-shrink: 0;
 }
-.component.-compare .wrap .main-target > .component.-hexagon .outside {
+.component.-compare > .wrap .main-target > .component.-hexagon .outside {
   background-color: #ea2458;
 }
-.component.-compare .wrap .vs {
+.component.-compare > .wrap .vs {
   font-size: 13px;
   color: #3f4244;
   font-weight: bold;
@@ -948,18 +1025,18 @@ img {
   flex-shrink: 0;
   text-align: center;
 }
-.component.-compare .wrap .comparison-target {
+.component.-compare > .wrap .comparison-target {
   position: relative;
   display: flex;
   width: 900px;
   max-width: 100%;
   flex: 1;
 }
-.component.-compare .wrap .comparison-target .hexagon-plus {
+.component.-compare > .wrap .comparison-target .hexagon-plus {
   width: 120px;
   height: 140px;
 }
-.component.-compare .wrap .comparison-target .hexagon-plus .component.-hexagon {
+.component.-compare > .wrap .comparison-target .hexagon-plus .component.-hexagon {
   position: relative;
   background-color: #e1e5ec;
   width: 80px;
@@ -969,7 +1046,7 @@ img {
   margin-top: 12px;
   cursor: pointer;
 }
-.component.-compare .wrap .comparison-target .hexagon-plus .component.-hexagon .step1 {
+.component.-compare > .wrap .comparison-target .hexagon-plus .component.-hexagon .step1 {
   background-color: #fff;
   width: 75px;
   height: 80px;
@@ -980,7 +1057,7 @@ img {
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-.component.-compare .wrap .comparison-target .hexagon-plus .component.-hexagon .step1 .step2 {
+.component.-compare > .wrap .comparison-target .hexagon-plus .component.-hexagon .step1 .step2 {
   background-color: #a4a8ab;
   width: 70px;
   height: 75px;
@@ -991,7 +1068,7 @@ img {
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-.component.-compare .wrap .comparison-target .hexagon-plus .component.-hexagon .step1 .step2 .horizontal {
+.component.-compare > .wrap .comparison-target .hexagon-plus .component.-hexagon .step1 .step2 .horizontal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1001,7 +1078,7 @@ img {
   background-color: #fff;
   border-radius: 8px;
 }
-.component.-compare .wrap .comparison-target .hexagon-plus .component.-hexagon .step1 .step2 .vertical {
+.component.-compare > .wrap .comparison-target .hexagon-plus .component.-hexagon .step1 .step2 .vertical {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1011,27 +1088,27 @@ img {
   background-color: #fff;
   border-radius: 8px;
 }
-.component.-compare .wrap .comparison-target .swiper-scrollbar-drag {
+.component.-compare > .wrap .comparison-target .swiper-scrollbar-drag {
   background-color: #b9bdc0;
 }
-.component.-compare .wrap .comparison-target .swiper-scrollbar {
+.component.-compare > .wrap .comparison-target .swiper-scrollbar {
   background-color: #edeff3;
 }
-.component.-compare .wrap .comparison-target .swiper-slide {
+.component.-compare > .wrap .comparison-target .swiper-slide {
   width: 120px;
   height: 140px;
   cursor: pointer;
 }
-.component.-compare .wrap .comparison-target .swiper-horizontal > .swiper-scrollbar, .component.-compare .wrap .comparison-target .swiper-scrollbar.swiper-scrollbar-horizontal {
+.component.-compare > .wrap .comparison-target .swiper-horizontal > .swiper-scrollbar, .component.-compare > .wrap .comparison-target .swiper-scrollbar.swiper-scrollbar-horizontal {
   bottom: 0;
 }
-.component.-compare .wrap .comparison-target .swiper-scrollbar swiper-scrollbar-horizontal {
+.component.-compare > .wrap .comparison-target .swiper-scrollbar swiper-scrollbar-horizontal {
   max-width: 920px;
   margin: 0 auto;
   overflow: hidden;
   left: 0;
 }
-.component.-compare .wrap .strname {
+.component.-compare > .wrap .strname {
   font-size: 14px;
   color: #3f4244;
   font-weight: 500;
@@ -1058,6 +1135,9 @@ img {
 .component.-compare .hide-box .wrap {
   gap: 16px;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .component.-compare .hide-box .wrap .item .component.-hexagon {
   width: 58px;
@@ -1127,6 +1207,7 @@ img {
   bottom: 0;
   width: 28px;
   height: 28px;
+  cursor: pointer;
 }
 .component.-hexagon .option .change {
   position: relative;

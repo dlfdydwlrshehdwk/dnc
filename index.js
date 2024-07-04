@@ -2,14 +2,12 @@ window.addEventListener('DOMContentLoaded',function(){
 
   let mySwiper = this.document.querySelector('.mySwiper')
   var swiper = new Swiper(mySwiper, {
-    // observer: true,
-    // observeParents: true,
-    // variableWidth: true,
     slidesPerView: "8",
     scrollbar: {
       el: ".swiper-scrollbar",
     },
   });
+  
   scrollTopCheck();
   changeTab();
 })
@@ -31,7 +29,7 @@ window.addEventListener('DOMContentLoaded',function(){
       ele.classList.remove('active')
     })
   }
-
+  // 스크롤시 스크롤top값을 체크해 클래스를 줌
   function scrollTopCheck () {
     window.addEventListener('scroll',function(){
       let windowH = window.scrollY;
